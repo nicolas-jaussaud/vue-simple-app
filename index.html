@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="assets/css/main.css" />
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" />
+	<title>VueJS - Simple App</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+<body>
+	<main id='app'>
+		
+		<!-- Menu -->
+		<nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
+  			<div class="container">
+    			<div class="navbar-header">
+      				<a class="navbar-brand" href="#">VueJS - Simple App</a>
+    			</div>
+    			<ul class="nav navbar-nav">
+					<li><router-link to="/home">Home</router-link></li>
+	    			<li><router-link to="/page1">Page 1</router-link></li>
+	    			<li><router-link to="/page2">Page 2</router-link></li>
+	    		</ul>
+			</nav>
+		</section>
+		
+		<!-- View -->
+		<main class="container-fluid">
+			<section class="container">
+				<router-view></router-view>
+			</section>
+		</main>
+	</main>
+
+
+	<!-- Vue Lib -->
+	<script src='./app/lib/vue.js'></script>
+	<script src='./app/lib/vue-router.js'></script>
+
+	<!-- Api functions -->
+	<script src='./app/api.js'></script>
+	
+	<!-- Pages -->
+	<script src='./app/pages/home.js'></script>
+	<script src='./app/pages/page1.js'></script>
+	<script src='./app/pages/page2.js'></script>
+	
+	<!-- App -->
+	<script src='./app/app.js'></script>
+</body>
+</html>
